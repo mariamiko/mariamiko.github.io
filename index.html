@@ -1,38 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Mój wspaniały prototyp czegoś</title>
+    <title>Ratchet template page</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="ratchet/css/ratchet.css" rel="stylesheet">
 
-
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet/js/ratchet.js"></script>
 </head>
 
 <body>
 
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <h1 class="title">Ratchet</h1>
+    </header>
 
-    <div class="container-fluid">
-       <div class="row">
-       
-       <div class="box1 col-xs-1 col-xs-offset-1">box1</div>
-         <div class=" box2 col-xs-2">box2</div>
-          <div class="box1 col-xs-1">box1</div>
-         </div>
-        
-     
-      </div>
-     
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some
+            Ratchet resources:</p>
+        <div class="card">
+            <ul class="table-view">
+                <li class="table-view-cell">
+                    <a class="push-right" href="http://goratchet.com">
+                        <strong>Ratchet documentation</strong>
+                    </a>
+                </li>
+                <li class="table-view-cell">
+                    <a class="push-right" href="https://github.com/twbs/ratchet/">
+                        <strong>Ratchet on Github</strong>
+                    </a>
+                </li>
+                <li class="table-view-cell">
+                    <a class="push-right" href="https://groups.google.com/forum/#!forum/goratchet">
+                        <strong>Ratchet Google group</strong>
+                    </a>
+                </li>
+                <li class="table-view-cell">
+                    <a class="push-right" href="https://twitter.com/goratchet">
+                        <strong>Ratchet on Twitter</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="bar bar-tab">
+
+        <a class="tab-item active" href="podstrona.html">
+            <span class="icon icon-home"></span>
+            <span class="tab-label">podstrona</span>
+        </a>
+        <a class="tab-item" href="#">
+            <span class="icon icon-person"></span>
+            <span class="tab-label">Coś</span>
+        </a>
+        <a class="tab-item" href="#">
+            <span class="icon icon-star-filled"></span>
+            <span class="tab-label">Coś</span>
+        </a>
+        <a class="tab-item" href="#">
+            <span class="icon icon-search"></span>
+            <span class="tab-label">Szukaj</span>
+        </a>
+
+    </nav>
+
+
 </body>
 
 </html>
