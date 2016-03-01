@@ -36,7 +36,7 @@ a:active {
 
 .bar-tab ~ .content {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .bar-footer ~ .content {
